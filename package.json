@@ -1,0 +1,27 @@
+{
+  "name": "node_mongo_practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceekay32/node_mongo_practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ceekay32/node_mongo_practice/issues"
+  },
+  "homepage": "https://github.com/ceekay32/node_mongo_practice#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5",
+    "nodemon": "^2.0.16"
+  }
+}
