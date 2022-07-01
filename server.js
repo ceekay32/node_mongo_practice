@@ -1,11 +1,15 @@
 const express = require("express");
 const dotenv = require("dotenv");
-
-// route files
-const bootcamps = require("./routes/bootcamps");
+const connectDB = require("./config/db");
 
 //load env variables
 dotenv.config();
+
+//connect to database
+connectDB();
+
+// route files
+const bootcamps = require("./routes/bootcamps");
 
 const app = express();
 
@@ -14,4 +18,4 @@ app.use("/api/v1/bootcamps", bootcamps);
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, console.log("server running"));
+const server = app.listen(PORT, console.log("server running"));
